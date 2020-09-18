@@ -4,8 +4,9 @@ dhcp
 
 set base-url http://stable.release.core-os.net/amd64-usr/current
 
-kernel ${base-url}/coreos\_production\_pxe.vmlinuz initrd=coreos\_production\_pxe\_image.cpio.gz coreos.first\_boot=1 coreos.config.url=https://example.com/pxe-config.ign
-
+kernel ${base-url}/coreos\_production\_pxe.vmlinuz 
+initrd=coreos\_production\_pxe\_image.cpio.gz 
+coreos.first\_boot=1 
 initrd ${base-url}/coreos\_production\_pxe\_image.cpio.gz
 
 boot
